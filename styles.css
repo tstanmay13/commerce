@@ -262,6 +262,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .highlight {
@@ -294,6 +295,7 @@ h2 {
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* FEATURES and RECENT */
@@ -383,6 +385,29 @@ footer{
 }
 
 
+@media (max-width: 768px){
+    .header__description{
+        padding: 0 24px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    .button{
+        font-size: 18px;
+    }
+
+    .book{
+        width: 50%;
+    }
+}
+
+/* SMALL PHONES */
 @media (max-width: 550px){
 
     .button__menu{
@@ -391,5 +416,14 @@ footer{
 
     .nav__links{
         display: none;
+    }
+
+    .highlight{
+        width: 100%;
+        
+    }
+
+    .highlight:not(:last-child){
+        margin-bottom: 24px;
     }
 }
